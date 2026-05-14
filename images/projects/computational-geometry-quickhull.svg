@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20244c"/>
+      <stop offset="100%" stop-color="#2f3568"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0,0 L11,5.5 L0,11 z" fill="#ffd166"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="70" y="90" width="1060" height="540" rx="26" fill="#ffffff" opacity="0.08"/>
+
+  <text x="600" y="240" text-anchor="middle" fill="#f0f4ff" font-size="52" font-family="Arial, sans-serif" font-weight="700">
+    Quickhull
+  </text>
+  <text x="600" y="285" text-anchor="middle" fill="#ccd8f2" font-size="28" font-family="Arial, sans-serif">
+    Convex Hull (Divide and Conquer)
+  </text>
+
+  <g fill="#9ad1ff">
+    <circle cx="270" cy="445" r="8"/>
+    <circle cx="350" cy="350" r="8"/>
+    <circle cx="455" cy="315" r="8"/>
+    <circle cx="560" cy="430" r="8"/>
+    <circle cx="680" cy="300" r="8"/>
+    <circle cx="815" cy="355" r="8"/>
+    <circle cx="920" cy="390" r="8"/>
+  </g>
+
+  <polyline points="270,445 350,350 455,315 680,300 920,390 560,430 270,445"
+            fill="rgba(114,239,221,0.18)" stroke="#72efdd" stroke-width="6"/>
+
+  <line x1="270" y1="445" x2="455" y2="315" stroke="#ffd166" stroke-width="5" marker-end="url(#arr)"/>
+  <line x1="455" y1="315" x2="920" y2="390" stroke="#ffd166" stroke-width="5" marker-end="url(#arr)"/>
+
+  <text x="600" y="540" text-anchor="middle" fill="#d3def5" font-size="24" font-family="Arial, sans-serif">
+    Extreme points -> recursive farthest-point splits -> hull boundary
+  </text>
+</svg>

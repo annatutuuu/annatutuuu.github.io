@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="ccBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d3557"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a86ff"/>
+      <stop offset="100%" stop-color="#4361ee"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8338ec"/>
+      <stop offset="100%" stop-color="#5e60ce"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec4b6"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#ccBg)"/>
+  <rect x="54" y="54" width="1092" height="612" rx="28" fill="#ffffff" opacity="0.07"/>
+
+  <text x="88" y="132" fill="#e8f1ff" font-size="46" font-family="Arial, sans-serif" font-weight="700">
+    Credit Card Recommendation Platform
+  </text>
+  <text x="88" y="174" fill="#a9c0e0" font-size="24" font-family="Arial, sans-serif">
+    Spend profile -> reward rules -> ranked card strategy
+  </text>
+
+  <g transform="translate(88,220)">
+    <rect x="0" y="0" width="320" height="250" rx="20" fill="#0b132b" opacity="0.48"/>
+    <text x="24" y="48" fill="#dce7ff" font-size="29" font-family="Arial, sans-serif" font-weight="700">User Spend Mix</text>
+    <rect x="24" y="76" width="248" height="18" rx="9" fill="#4cc9f0"/>
+    <rect x="24" y="110" width="190" height="18" rx="9" fill="#90e0ef"/>
+    <rect x="24" y="144" width="148" height="18" rx="9" fill="#ade8f4"/>
+    <text x="284" y="90" fill="#dce7ff" font-size="18" font-family="Arial, sans-serif">Dining</text>
+    <text x="224" y="124" fill="#dce7ff" font-size="18" font-family="Arial, sans-serif">Travel</text>
+    <text x="182" y="158" fill="#dce7ff" font-size="18" font-family="Arial, sans-serif">Other</text>
+  </g>
+
+  <g transform="translate(444,220)">
+    <rect x="0" y="0" width="320" height="250" rx="20" fill="#0b132b" opacity="0.48"/>
+    <text x="24" y="48" fill="#dce7ff" font-size="29" font-family="Arial, sans-serif" font-weight="700">Scoring Engine</text>
+    <rect x="24" y="80" width="272" height="58" rx="12" fill="url(#cardA)"/>
+    <rect x="24" y="150" width="272" height="58" rx="12" fill="url(#cardB)"/>
+    <text x="42" y="117" fill="#f8fbff" font-size="22" font-family="Arial, sans-serif">Card A score: 91</text>
+    <text x="42" y="187" fill="#f8fbff" font-size="22" font-family="Arial, sans-serif">Card B score: 85</text>
+  </g>
+
+  <g transform="translate(800,220)">
+    <rect x="0" y="0" width="320" height="250" rx="20" fill="#0b132b" opacity="0.48"/>
+    <text x="24" y="48" fill="#dce7ff" font-size="29" font-family="Arial, sans-serif" font-weight="700">Top Recommendation</text>
+    <rect x="24" y="80" width="272" height="130" rx="18" fill="url(#cardC)"/>
+    <text x="44" y="124" fill="#f8fbff" font-size="26" font-family="Arial, sans-serif" font-weight="700">Cash-Back Plus</text>
+    <text x="44" y="160" fill="#e4fbff" font-size="20" font-family="Arial, sans-serif">High fit for daily spend</text>
+    <text x="44" y="188" fill="#e4fbff" font-size="20" font-family="Arial, sans-serif">Lower annual fee impact</text>
+  </g>
+
+  <g stroke="#cce3ff" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M414 344 L434 344"/>
+    <path d="M770 344 L790 344"/>
+  </g>
+  <g fill="#cce3ff">
+    <polygon points="434,344 422,336 422,352"/>
+    <polygon points="790,344 778,336 778,352"/>
+  </g>
+
+  <text x="88" y="584" fill="#d0def2" font-size="24" font-family="Arial, sans-serif">
+    Team software engineering project with production deployment issues tracked in VCM environment
+  </text>
+</svg>

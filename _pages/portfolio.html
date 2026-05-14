@@ -1,0 +1,82 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+redirect_from:
+  - /portfolio/
+author_profile: true
+archive_class: projects-archive-page
+---
+
+{% include base_path %}
+
+{% assign fintech_grad_posts = site.portfolio | where: "section", "fintech_grad" | sort: "date" | reverse %}
+{% assign undergrad_research_posts = site.portfolio | where: "section", "undergrad_research" | sort: "date" | reverse %}
+
+<h2>Applied FinTech &amp; Machine Learning</h2>
+<hr />
+<div class="projects-grid">
+{% for post in fintech_grad_posts %}
+  {% if post.header.teaser %}
+    {% assign project_teaser = post.header.teaser %}
+  {% else %}
+    {% assign project_teaser = "500x300.png" %}
+  {% endif %}
+  <article class="project-card">
+    <a class="project-card__media-link" href="{{ base_path }}{{ post.url }}" rel="permalink">
+      <div class="project-card__media">
+        {% if project_teaser contains "://" %}
+          <img src="{{ project_teaser }}" alt="{{ post.title }}">
+        {% else %}
+          <img src="{{ project_teaser | prepend: "/images/" | prepend: base_path }}" alt="{{ post.title }}">
+        {% endif %}
+      </div>
+    </a>
+    <div class="project-card__body">
+      <h3 class="project-card__title"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a></h3>
+      {% if post.project_period %}
+        <p class="project-card__meta">Duration: {{ post.project_period }}</p>
+      {% elsif post.date %}
+        <p class="project-card__meta">Duration: {{ post.date | date: "%b %Y" }}</p>
+      {% endif %}
+      {% if post.excerpt %}
+        <p class="project-card__excerpt">{{ post.excerpt }}</p>
+      {% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>
+
+<h2>Research-Related Projects</h2>
+<hr />
+<div class="projects-grid">
+{% for post in undergrad_research_posts %}
+  {% if post.header.teaser %}
+    {% assign project_teaser = post.header.teaser %}
+  {% else %}
+    {% assign project_teaser = "500x300.png" %}
+  {% endif %}
+  <article class="project-card">
+    <a class="project-card__media-link" href="{{ base_path }}{{ post.url }}" rel="permalink">
+      <div class="project-card__media">
+        {% if project_teaser contains "://" %}
+          <img src="{{ project_teaser }}" alt="{{ post.title }}">
+        {% else %}
+          <img src="{{ project_teaser | prepend: "/images/" | prepend: base_path }}" alt="{{ post.title }}">
+        {% endif %}
+      </div>
+    </a>
+    <div class="project-card__body">
+      <h3 class="project-card__title"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a></h3>
+      {% if post.project_period %}
+        <p class="project-card__meta">Duration: {{ post.project_period }}</p>
+      {% elsif post.date %}
+        <p class="project-card__meta">Duration: {{ post.date | date: "%b %Y" }}</p>
+      {% endif %}
+      {% if post.excerpt %}
+        <p class="project-card__excerpt">{{ post.excerpt }}</p>
+      {% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>

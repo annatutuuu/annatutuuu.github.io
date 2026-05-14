@@ -1,0 +1,62 @@
+---
+layout: archive
+title: "Experience"
+permalink: /experience/
+author_profile: true
+archive_class: experience-archive-page
+---
+
+{% include base_path %}
+
+{% assign professional_posts = site.experience | where: "section", "professional" | sort: "date" | reverse %}
+{% assign leadership_posts = site.experience | where: "section", "leadership_campus" | sort: "date" | reverse %}
+
+<div class="experience-archive">
+  <section class="exp-group">
+    <h2 class="exp-group-title">Professional Experience</h2>
+    <hr class="exp-group-divider" />
+
+    {% for post in professional_posts %}
+      <article class="exp-card">
+        <header class="exp-card-header">
+          <h3 class="exp-role">
+            <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          {% if post.date_range %}
+            <span class="exp-date">{{ post.date_range }}</span>
+          {% elsif post.date %}
+            <span class="exp-date">{{ post.date | date: "%Y" }}</span>
+          {% endif %}
+        </header>
+
+        {% if post.excerpt %}
+          <p class="exp-summary">{{ post.excerpt }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+
+  <section class="exp-group">
+    <h2 class="exp-group-title">Leadership &amp; Campus</h2>
+    <hr class="exp-group-divider" />
+
+    {% for post in leadership_posts %}
+      <article class="exp-card">
+        <header class="exp-card-header">
+          <h3 class="exp-role">
+            <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          {% if post.date_range %}
+            <span class="exp-date">{{ post.date_range }}</span>
+          {% elsif post.date %}
+            <span class="exp-date">{{ post.date | date: "%Y" }}</span>
+          {% endif %}
+        </header>
+
+        {% if post.excerpt %}
+          <p class="exp-summary">{{ post.excerpt }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+</div>

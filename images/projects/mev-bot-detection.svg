@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="72" y="84" width="1056" height="552" rx="24" fill="#ffffff" opacity="0.08"/>
+
+  <text x="112" y="164" fill="#ecf6ff" font-size="44" font-family="Arial, sans-serif" font-weight="700">
+    MEV Bot Detection on Ethereum
+  </text>
+  <text x="112" y="202" fill="#c4d8ec" font-size="24" font-family="Arial, sans-serif">
+    Behavioral features + supervised classification
+  </text>
+
+  <rect x="112" y="246" width="480" height="312" rx="18" fill="#0b1222" opacity="0.58"/>
+  <text x="146" y="292" fill="#d9ecff" font-size="30" font-family="Arial, sans-serif" font-weight="700">Feature signals</text>
+
+  <circle cx="190" cy="372" r="14" fill="#7dd3fc"/>
+  <circle cx="280" cy="336" r="12" fill="#7dd3fc"/>
+  <circle cx="360" cy="392" r="13" fill="#7dd3fc"/>
+  <circle cx="452" cy="356" r="12" fill="#7dd3fc"/>
+  <circle cx="532" cy="420" r="13" fill="#7dd3fc"/>
+
+  <line x1="168" y1="520" x2="550" y2="520" stroke="#89b7d9" stroke-width="3"/>
+  <line x1="168" y1="520" x2="168" y2="320" stroke="#89b7d9" stroke-width="3"/>
+  <polyline points="182,492 248,454 314,466 380,428 446,438 512,394"
+            fill="none" stroke="#67e8f9" stroke-width="7"/>
+
+  <rect x="628" y="246" width="472" height="312" rx="18" fill="#0b1222" opacity="0.58"/>
+  <text x="662" y="292" fill="#d9ecff" font-size="30" font-family="Arial, sans-serif" font-weight="700">Model output</text>
+
+  <rect x="662" y="334" width="404" height="48" rx="12" fill="#134e4a"/>
+  <rect x="662" y="334" width="372" height="48" rx="12" fill="#2dd4bf"/>
+  <text x="678" y="366" fill="#083a37" font-size="24" font-family="Arial, sans-serif" font-weight="700">OOF AUC 0.983</text>
+
+  <rect x="662" y="402" width="404" height="48" rx="12" fill="#2f3652"/>
+  <rect x="662" y="402" width="342" height="48" rx="12" fill="#60a5fa"/>
+  <text x="678" y="434" fill="#12283f" font-size="24" font-family="Arial, sans-serif" font-weight="700">Precision@100 0.99</text>
+
+  <text x="662" y="508" fill="#c5dcf0" font-size="23" font-family="Arial, sans-serif">XGBoost with weak-positive label augmentation</text>
+</svg>

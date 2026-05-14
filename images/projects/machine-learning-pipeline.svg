@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="mlBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#mlBg)"/>
+  <rect x="56" y="56" width="1088" height="608" rx="28" fill="#ffffff" opacity="0.07"/>
+
+  <text x="92" y="132" fill="#e8f1ff" font-size="46" font-family="Arial, sans-serif" font-weight="700">
+    Machine Learning Group Project
+  </text>
+  <text x="92" y="174" fill="#a9c0e0" font-size="24" font-family="Arial, sans-serif">
+    End-to-end pipeline with team experiment tracking
+  </text>
+
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <rect x="92" y="234" width="220" height="116" rx="16" fill="#a8dadc"/>
+    <text x="128" y="302" fill="#1f2a44" font-size="30">Clean Data</text>
+
+    <rect x="346" y="234" width="220" height="116" rx="16" fill="#8ecae6"/>
+    <text x="382" y="302" fill="#1f2a44" font-size="30">Features</text>
+
+    <rect x="600" y="234" width="220" height="116" rx="16" fill="#48cae4"/>
+    <text x="650" y="302" fill="#1f2a44" font-size="30">Models</text>
+
+    <rect x="854" y="234" width="254" height="116" rx="16" fill="#00b4d8"/>
+    <text x="888" y="302" fill="#10324d" font-size="30">Evaluation</text>
+  </g>
+
+  <g stroke="#d1e8ff" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M318 292 L338 292"/>
+    <path d="M572 292 L592 292"/>
+    <path d="M826 292 L846 292"/>
+  </g>
+  <g fill="#d1e8ff">
+    <polygon points="338,292 326,284 326,300"/>
+    <polygon points="592,292 580,284 580,300"/>
+    <polygon points="846,292 834,284 834,300"/>
+  </g>
+
+  <g>
+    <rect x="92" y="398" width="500" height="230" rx="20" fill="#0b132b" opacity="0.5"/>
+    <text x="124" y="448" fill="#dcefff" font-size="30" font-family="Arial, sans-serif" font-weight="700">Cross-validation</text>
+    <polyline points="128,564 188,522 248,544 308,476 368,492 428,450 488,430 548,416"
+              fill="none" stroke="#7bdff2" stroke-width="7"/>
+    <line x1="128" y1="574" x2="560" y2="574" stroke="#89a9c8" stroke-width="3"/>
+  </g>
+
+  <g>
+    <rect x="624" y="398" width="484" height="230" rx="20" fill="#0b132b" opacity="0.5"/>
+    <text x="656" y="448" fill="#dcefff" font-size="30" font-family="Arial, sans-serif" font-weight="700">Error Analysis + Reproducibility</text>
+    <rect x="656" y="480" width="420" height="28" rx="10" fill="#bde0fe"/>
+    <rect x="656" y="520" width="350" height="28" rx="10" fill="#90e0ef"/>
+    <rect x="656" y="560" width="290" height="28" rx="10" fill="#48cae4"/>
+  </g>
+</svg>
