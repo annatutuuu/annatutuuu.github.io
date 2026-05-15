@@ -26,3 +26,4 @@ Group software engineering project building a personalized credit card recommend
 
 Links:
 - [Code (GitLab)](https://gitlab.oit.duke.edu/hz362/512-pccrs)
+- <a href="http://vcm-53434.vm.duke.edu/" style="color: #000; text-decoration: none;">Live Site (Duke VCM)</a>
